@@ -1,0 +1,16 @@
+{
+  "name": "nepali-datepicker-with-jquery-modal",
+  "version": "1.0.0",
+  "description": "Using Nepali Date Picker with modal popup",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sajan Maharjan",
+  "license": "ISC",
+  "dependencies": {
+    "@sajanm/nepali-date-picker": "^3.6.0",
+    "bootstrap": "^5.0.1",
+    "jQuery": "^1.7.4"
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Using Nepali Date Picker in a modal popup</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Nepali Date Picker Js -->
+    <script src="./node_modules/@sajanm/nepali-date-picker/dist/nepali.datepicker.v3.6.min.js"></script>
+
+    <!-- Nepali Date Picker Css -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/@sajanm/nepali-date-picker/dist/nepali.datepicker.v3.6.min.css"
+    />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+      <div class="container">
+        <h1 class="mt-5">Using Nepali Date Picker in a modal popup</h1>
+        <br />
+        <p class="lead">
+          We are going to look at how we can use Nepali Date Picker in a
+          bootstrap modal popup.
+        </p>
+        <p>
+          <input type="text" id="nepali-date-picker" />
+        </p>
+        <p>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Launch demo modal
+          </button>
+        </p>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  <input type="text" id="modal-nepali-date-picker" />
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/jQuery/tmp/jquery.js"></script>
+  <script src="script.js"></script>
+</html>
